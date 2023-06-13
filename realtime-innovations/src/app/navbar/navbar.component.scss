@@ -1,0 +1,68 @@
+.topnav {
+    align-items: center;
+    justify-content: space-between;
+    background: #1DA1F2;
+    color: white;
+    font-family: 'Roboto';
+    padding: 5px 25px 0 25px;
+    .menu {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .menu:hover {
+        border-bottom: solid 2px;
+    }
+
+    .menu.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .topnav .menu {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 14px 5px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+
+    .topnav.responsive .menu {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-left: 0;
+        border-bottom: 0.5px solid #FFF;
+    }
+    .topnav.responsive {
+        .bar-name {
+            margin-top: 14px;
+        }
+    }
+}

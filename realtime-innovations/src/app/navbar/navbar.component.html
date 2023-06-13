@@ -1,0 +1,14 @@
+<div class="topnav" [ngClass]="responsive ? 'responsive' : 'flex'">
+    <div class="bar-name"><b>Me</b><span>volve</span></div>
+    <div>
+        <a class="menu">Home</a>
+        <a class="menu">News</a>
+        <a class="menu">Contact</a>
+        <a class="menu">About</a>
+    </div>
+    <a class="icon" (click)="responsive = !responsive" >
+        <i *ngIf="!responsive" class="fa fa-bars"></i>
+        <i *ngIf="responsive" class="fa fa-times"></i>
+
+    </a>
+</div>
