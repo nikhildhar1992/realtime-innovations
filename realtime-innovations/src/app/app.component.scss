@@ -1,4 +1,4 @@
-.top-body, .customize1, .customize2 {
+.top-body, .customize1, .customize2, .customize3, .customize4, .customize5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +26,141 @@
         text-align: center;
         font-family: 'Roboto';
         margin-top: 5px;
+    }
+}
+.customize3 {
+    justify-content: center;
+    img {
+        width: 50%;
+    }
+    div {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        img:nth-child(2) {
+            position: absolute;
+            left: 60px;
+            top: 64%;
+            width: 80%;
+        }
+    }
+}
+.customize4, .customize5, .customize6 {
+    justify-content: center;
+    img {
+        width: 50%;
+    }
+    li {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #9E9E9E;
+    }
+}
+.customize6, .customize7, .customize8{
+    margin-top: 50px;
+}
+.customize7 {
+    .plan-div {
+        justify-content: center;
+        align-items: center;
+        div {
+            justify-content: center;
+        }
+        flex-direction: column;
+    }
+    .offer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05), -4px -4px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        width: 50%;
+        img {
+            width: 50%;
+        }
+    }
+}
+.customize8 {
+    flex-direction: column;
+    align-items: center;
+    .message-box {
+        width: 50%;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05), -4px -4px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        padding: 25px;margin-top: 15px;
+        label {
+            font-family: 'Roboto';
+            font-style: normal;
+            width: 100%;
+            color: #323238;
+        }
+        .input {
+            border: 1px solid #949C9E;
+            border-radius: 6px;
+            width: 100%;
+            min-height: 50px;
+            resize: none;
+        }
+        div {
+            margin-top: 15px;
+        }
+        button {
+            background: #1DA1F2;
+            border-radius: 6px;
+            color: white;
+            box-shadow: none;
+            border: none;
+            padding: 20px 100px;
+        }
+    }
+}
+
+.app-footer {
+    .top-div {
+        border-bottom: solid 1px #949C9E;
+        padding-bottom: 15px;
+    }
+    background: #424242;
+    padding: 20px;
+    .left-side {
+        .top {
+            b {
+                color: white;
+                font-size: 30px;
+            }
+            span {
+                color: white;
+            }
+        }
+        .bottom {
+            width: 70%;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: #949C9E;
+        }
+    }
+    .right-side {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex {
+        span {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            color: #949C9E;
+            font-size: 12px;
+        }
     }
 }
 @media screen and (max-width: 575px) {
@@ -59,13 +194,41 @@
             }
         }
     }
-    .customize1, .customize2 {
+    .customize1, .customize2, .customize3,.customize4, .customize5 {
         display: none;
+    }
+    .customize7 {
+        .plan-div div {
+            flex-direction: column;
+        }
+        .plan-div {
+            align-items: center;
+            .flex {
+            width: 50%;
+        }}
+        .offer {
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+    .customize8 {
+        .message-box {
+            width: 90%;
+        }
+    }
+    .app-footer {
+        .top-div {
+            flex-direction: column;
+        }
+        .right-side {
+            width: 100%;
+            margin-top: 25px;
+        }
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .customize1 {
-        // flex-direction: column;
+    .customize4, .customize5 {
+        display: none;
     }
 }
